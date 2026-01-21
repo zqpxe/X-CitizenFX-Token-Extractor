@@ -1,28 +1,37 @@
 # X-CitizenFX-Token-Extractor
-> Let's you extract your 'X-CitizenFX-Token' very easy and fast
 
-## How to Run:
-To run this script, use the following command:
+Extract your `X-CitizenFX-Token` quickly and easily.
+
+## Description
+
+This script allows you to retrieve your FiveM `X-CitizenFX-Token` automatically. It saves the token to a file for easy use, without displaying it in the console.
+
+## Installation
+
+Install the required Python libraries:
+
+```bash
+pip install pyshark colorama
 ```
+
+## Usage
+
+Run the script with:
+
+```bash
 python ExtractFivemTokens.py
-
-1. Find a server you can connect to
-2. Copy its CFX code & paste into the script.
-3. Find your InternetProtocol 
-- Easy way to find:
-If no vpn:
-Either Wi-fi or Ethernet
-If you're on a VPN:
-Hold your mouse over the ethernet icon - Between the two "Internet Access" there is a name of whatever VPN you're using. Put that. E.g: CloudflareWARP, Mullvad, etc.
-4. Join the server. It'll save automatic to a file. 
 ```
 
-## Install Dependencies:
-Before running the script, install the necessary libraries by using this command:
-```
-pip install pyshark re colorama
-```
+Follow these steps:
 
-## Disclaimer:
-Your token will be saved to a file & not printed to your console
+1. Find a FiveM server you can connect to.
+2. Copy the server’s CFX code and paste it into the script when prompted.
+3. Specify your Internet protocol:
+   * **No VPN:** Use `Wi-Fi` or `Ethernet`.
+   * **With VPN:** Hover over the network icon in your taskbar to see the VPN name (e.g., `CloudflareWARP`, `Mullvad`) and enter it.
+4. Join the server. Your token will be automatically saved to a file.
 
+## Disclaimer
+
+* Your token is saved to a file and **will not** be printed in the console.
+* Use responsibly. Do not share your token 
