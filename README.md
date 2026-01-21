@@ -4,7 +4,7 @@ Extract your `X-CitizenFX-Token` quickly and easily.
 
 ## Description
 
-This script allows you to retrieve your FiveM `X-CitizenFX-Token` automatically. It saves the token to a file for easy use, without displaying it in the console.
+This script allows you to retrieve your FiveM `X-CitizenFX-Token` automatically. It saves the token to a file, without displaying it in the console.
 
 ## Installation
 
