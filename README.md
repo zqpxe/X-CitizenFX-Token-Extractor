@@ -34,4 +34,8 @@ Follow these steps:
 ## Disclaimer
 
 * Your token is saved to a file and **will not** be printed in the console.
-* Use responsibly. Do not share your token 
+* Use responsibly. Do not share your token
+* 
+## Why did I publish this
+* 95% of the FiveM community probably have no need use this tool. I developed this a year ago while experimenting with how the client communicates with servers and stuff like that.
+
