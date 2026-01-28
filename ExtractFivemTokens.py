@@ -10,7 +10,7 @@ from colorama import Fore
 
 os.system("cls && title Fivem Token Extractor")
 
-print(f"{Fore.RED}[!] Please Note this will extract your Fivem Tokens to the file tokens.json. Please enter your cfx token for the server{Fore.RESET}")
+print(f"{Fore.RED}[!] Please Note this will extract your Fivem Tokens to the file tokens.json. Enter your cfx token for the server & connect to it{Fore.RESET}")
 
 def is_string_valid(string):
     pattern = r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+$'
@@ -43,7 +43,7 @@ if result:
     ip, port = result.split(':') 
 
 fivem_servers = [
-    {'ip': ip, 'port': port}, # tThe server
+    {'ip': ip, 'port': port}, # The server
 ]
 
 # Regex pattern to capture the X-CitizenFX-Token
@@ -67,10 +67,8 @@ def capture_fivem_traffic(interface, ip, port):
             interface=interface,
             display_filter=f'http and ip.addr == {ip} and tcp.port == {port}'
         )
-
         for packet in capture.sniff_continuously():
             try:
-
                 if 'HTTP' in packet:
                     http_layer = packet['HTTP']
 
@@ -92,7 +90,7 @@ def capture_fivem_traffic(interface, ip, port):
                             json.dump(tokens, f, indent=4) 
       
                         # Stop the capture once the token is found
-                        capture.close()  # Stop sniffing
+                        capture.close()  # Stops sniffing
                         break  
 
             except Exception as e:
